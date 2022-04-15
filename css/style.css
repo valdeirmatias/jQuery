@@ -17,7 +17,7 @@ a {
 }
 
 .main-button a {
-  background-color: #3a8bcd;
+  background-color: rgb(13, 184, 218);
   border-radius: 5px;
   padding: 10px 15px;
   display: inline-block;
@@ -39,7 +39,7 @@ a {
 .section-heading .line-dec {
   width: 30px;
   height: 5px;
-  background-color: #3a8bcd;
+  background-color: rgb(13, 184, 218);
 }
 .section-heading h1 {
   font-size: 22px;
@@ -93,7 +93,7 @@ a {
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .show > .nav-link {
-  color: #3a8bcd;
+  color: rgb(13, 184, 218);
 }
 .navbar:after {
   width: 100%;
@@ -108,8 +108,8 @@ a {
   background-image: none;
 }
 .navbar-dark .navbar-toggler {
-  border-color: #3a8bcd;
-  background-color: #3a8bcd;
+  border-color: rgb(13, 184, 218);
+  background-color: rgb(13, 184, 218);
   height: 50px;
   outline: none;
 }
@@ -121,6 +121,9 @@ a {
   font-family: "FontAwesome";
 }
 
+.navbar-expand-lg .navbar-nav {
+  margin-top: 40px !important;
+}
 /* Banner Style */
 .banner {
   margin-top: 50px;
@@ -145,7 +148,7 @@ a {
 .banner .caption .line-dec {
   width: 30px;
   height: 5px;
-  background-color: #3a8bcd;
+  background-color: rgb(13, 184, 218);
 }
 .banner .caption p {
   margin-top: 15px;
@@ -171,7 +174,7 @@ a {
 .featured-item h4 {
   font-size: 17px;
   font-weight: 700;
-  color: #1e1e1e;
+  color: rgb(13, 9, 10);
   margin-top: 15px;
   transition: all 0.5s;
 }
@@ -179,7 +182,7 @@ a {
   color: #3a8bcd;
 }
 .featured-item h6 {
-  color: #3a8bcd;
+  color: rgb(13, 184, 218);
   font-size: 15px;
   font-weight: 700;
   margin-bottom: 0px;
@@ -192,7 +195,7 @@ a {
   outline: none;
 }
 .owl-theme .owl-dots .active span {
-  background-color: #3a8bcd !important;
+  background-color: rgb(13, 184, 218) !important;
 }
 .owl-theme .owl-dots .owl-dot span {
   background-color: #aaa;
@@ -288,7 +291,7 @@ a {
 }
 .footer .footer-menu a {
   font-size: 13px;
-  color: #7a7a7a;
+  color: #aaa;
   text-transform: uppercase;
   transition: all 0.5s;
 }
@@ -658,6 +661,17 @@ a {
   transition: all 0.5s;
   box-shadow: none;
   border: none;
+}
+
+.featured-item a,
+.btn btn-warning stretch-link {
+  background: rgb(238, 120, 12);
+  color: white;
+  font-weight: bold;
+}
+
+.footer .social-icons a:hover {
+  background: rgb(13, 184, 218);
 }
 
 /* Responsive Style */

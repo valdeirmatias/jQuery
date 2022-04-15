@@ -13,10 +13,10 @@ $(document).ready(function () {
 
   // Configuração de produtos
 
-  $(".featured-item a").addClass("btn btn-dark stretch-link");
+  $(".featured-item a").addClass("btn btn-warning stretch-link");
 
   $(".featured-item:first h4").append(
-    '<span class="badge bg-secondary">Novo</span>'
+    '<span class="badge bg-danger">Novo</span>'
   );
   // $('.featured-item:first h4').start('<span class="badge bg-secondary">Novo</span>')
   // $('.featured-item:first h4').html('<span class="badge bg-secondary">Novo</span>')
