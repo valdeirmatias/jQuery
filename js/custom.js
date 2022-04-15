@@ -59,4 +59,35 @@ $(document).ready(function () {
     .show(2000, function () {
       console.log($(this).find("h4").text() + " em estoque");
     });
+
+  /*
+   * Animações
+   */
+
+  const duracao = 1000; // equivalentea 1 segundo
+
+  $(".featured-item:nth(0)")
+    .hide(duracao)
+    .show(duracao)
+    .fadeOut(duracao)
+    .fadeIn(duracao)
+    .toggle(duracao)
+    .toggle(duracao);
+
+  $("#form-submit").on("click", function (e) {
+    e.preventDefault();
+
+    if ($("#email").val() != " ") {
+      $("#email").animate(
+        {
+          opacity: "toggle",
+          top: "-50",
+        },
+        500,
+        function () {
+          console.log($(this).val());
+        }
+      );
+    }
+  });
 });

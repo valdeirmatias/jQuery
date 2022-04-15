@@ -739,3 +739,11 @@ a {
     text-align: left;
   }
 }
+
+::placeholder {
+  color: #fff;
+}
+
+#email {
+  position: relative;
+}
