@@ -75,7 +75,7 @@ a {
   z-index: 999;
   position: absolute;
   left: 50%;
-  top: 105px;
+  top: 135px;
   transform: translateX(-50%);
 }
 .navbar-dark .navbar-nav .nav-item {
@@ -124,6 +124,7 @@ a {
 .navbar-expand-lg .navbar-nav {
   margin-top: 40px !important;
 }
+
 /* Banner Style */
 .banner {
   margin-top: 50px;
