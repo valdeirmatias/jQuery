@@ -106,4 +106,75 @@ $(document).ready(function () {
 
     myModal.show();
   });
+
+  // validate
+
+  function validate(elem) {
+    if (elem.val() == "") {
+      console.log("o campo de " + elem.attr("name") + " é obrigatório");
+      elem.addClass("invalid ");
+      return false;
+    } else {
+      elem.removeClass("invalid");
+    }
+  }
+
+  $("body").on("submit", ".modal-body .form", function (e) {
+    e.preventDefault();
+
+    const inputName = $("#nome");
+    const inputCpf = $("#cpf");
+    const inputEmail = $("#email");
+
+    validate(inputName);
+    validate(inputCpf);
+    validate(inputEmail);
+
+    if (
+      inputName.hasClass("invalid") ||
+      inputCpf.hasClass("invalid") ||
+      inputEmail.hasClass("invalid")
+    ) {
+      console.log("campo obrigatório");
+
+      return false;
+    } else {
+      $(this).submit();
+    }
+  });
+
+  $("body").on("blur", "#nome", function () {
+    validate($(this));
+
+    if ($(this).val().length <= 2) {
+      alert("caractere insuficiente");
+      return false;
+    }
+  });
+
+  $("body").on("blur", "#cpf", function () {
+    const regexCpf = /^\d{3}\.\d{3}\.\d{3}\-\d{2}$/;
+
+    validate($(this));
+
+    if ($(this).val().match(regexCpf)) {
+      return true;
+    } else {
+      alert("cpf inválido");
+      return false;
+    }
+  });
+
+  $("body").on("blur", "#email", function () {
+    const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    validate($(this));
+
+    if ($(this).val().match(regexEmail)) {
+      return true;
+    } else {
+      alert("email inválido");
+      return false;
+    }
+  });
 });
