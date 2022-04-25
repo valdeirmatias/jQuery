@@ -8,138 +8,175 @@
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./vendor/owl/css/owl.css">
     <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="./vendor/jquery-ui/jquery-ui.min.css">
+
     <link rel="stylesheet" href="./css/style.css">
     <title>ESTORE VESTE</title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/images/store_veste.png" alt="store veste"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="products.html">Produtos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-modal-open" href="about.html " rel="sobre">Sobre nós</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-modal-open" href="contact.html" rel="contato">Contato</a>
-                    </li>
-                </ul>
+    <div class="container header-top">
+        <div class="row">
+            <div class="col">
+                <div class="logo">
+                    <img src="./assets/images/store_veste.png" class="img-fluid" alt="">
+                </div>
+            </div>
+
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active ms-3" href="#">Home</a>
+                                </li>
+                                <li class="nav-item ms-3">
+                                    <a class="nav-link" href="#produtos">Produtos</a>
+                                </li>
+                                <li class="nav-item ms-3">
+                                    <a class="nav-link" href="#sobre">Sobre nós</a>
+                                </li>
+                                <li class="nav-item ms-3">
+                                    <a class="nav-link" href="#contato">Contato</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
-    </nav>
+    </div>
 
     <div class="banner">
-        <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/banner-bg.jpg " class="img-fluid d-block w-100 " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/banner-bg2.jpg" class="img-fluidd-block w-100 " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/banner-bg3.jpg" class="img-fluid d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="featured" class="featured-items">
+        <div class="container" id="produtos">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="caption">
-                        <h2>Ecommerce HTML Template</h2>
-                        <div class="line-dec"></div>
-                        <p>HTML Template can be converted into your desired CMS theme. </p>
+                    <div class="owl-carousel owl-theme">
+                        <div class="featured-item ms-2">
+                            <img src="assets/images/item-01.jpg" alt="Item 1">
+                            <h4>Produto 1</h4>
+                            <h6>R$ 20,00</h6>
+                            <button type="button" class="btn btn-warning mt-1"
+                                style="font-weight: bold;">Comprar</button>
+                        </div>
+                        <div class="featured-item">
+                            <img src="assets/images/item-02.jpg" alt="Item 2">
+                            <h4>Produto 2</h4>
+                            <h6>R$ 20,00</h6>
+                            <button type="button" class="btn btn-warning mt-1"
+                                style="font-weight: bold;">Comprar</button>
+                        </div>
+                        <div class="featured-item">
+                            <img src="assets/images/item-03.jpg" alt="Item 3">
+                            <h4>Produto 3</h4>
+                            <h6>R$ 20,00</h6>
+                            <button type="button" class="btn btn-warning mt-1"
+                                style="font-weight: bold;">Comprar</button>
+                        </div>
+                        <div class="featured-item">
+                            <img src="assets/images/item-04.jpg" alt="Item 4">
+                            <h4>Produto 4</h4>
+                            <h6>R$ 20,00</h6>
+                            <button type="button" class="btn btn-warning mt-1"
+                                style="font-weight: bold;">Comprar</button>
+                        </div>
+                        <div class="featured-item">
+                            <img src="assets/images/item-05.jpg" alt="Item 5">
+                            <h4>Produto 5</h4>
+                            <h6>R$ 20,00</h6>
+                            <button type="button" class="btn btn-warning mt-1"
+                                style="font-weight: bold;">Comprar</button>
+                        </div>
+                        <div class="featured-item">
+                            <img src="assets/images/item-06.jpg" alt="Item 6">
+                            <h4>Produto 6</h4>
+                            <h6>R$ 20,00</h6>
+                            <button type="button" class="btn btn-warning mt-1"
+                                style="font-weight: bold;">Comprar</button>
+                        </div>
+                        <div class="featured-item">
+                            <img src="assets/images/item-04.jpg" alt="Item 7">
+                            <h4>Produto 7</h4>
+                            <h6>R$ 20,00</h6>
+                            <button type="button" class="btn btn-warning mt-1"
+                                style="font-weight: bold;">Comprar</button>
+                        </div>
+                        <div class="featured-item">
+                            <img src="assets/images/item-05.jpg" alt="Item 8">
+                            <h4>Produto 8</h4>
+                            <h6>R$ 20,00</h6>
+                            <button type="button" class="btn btn-warning mt-1"
+                                style="font-weight: bold;">Comprar</button>
+                        </div>
+                        <div class="featured-item">
+                            <img src="assets/images/item-06.jpg" alt="Item 9">
+                            <h4>Produto 9</h4>
+                            <h6>R$ 20,00</h6>
+                            <button type="button" class="btn btn-warning mt-1"
+                                style="font-weight: bold;">Comprar</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="featured" class="featured-items">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading">
-                        <div class="line-dec"></div>
-                        <h1>Destaques</h1>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="owl-carousel owl-theme">
-                        <div class="featured-item">
-                            <img src="assets/images/item-01.jpg" alt="Item 1">
-                            <h4>Produto 1</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item">
-                            <img src="assets/images/item-02.jpg" alt="Item 2">
-                            <h4>Produto 2</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item">
-                            <img src="assets/images/item-03.jpg" alt="Item 3">
-                            <h4>Produto 3</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item">
-                            <img src="assets/images/item-04.jpg" alt="Item 4">
-                            <h4>Produto 4</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item">
-                            <img src="assets/images/item-05.jpg" alt="Item 5">
-                            <h4>Produto 5</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item">
-                            <img src="assets/images/item-06.jpg" alt="Item 6">
-                            <h4>Produto 6</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item">
-                            <img src="assets/images/item-04.jpg" alt="Item 7">
-                            <h4>Produto 7</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item">
-                            <img src="assets/images/item-05.jpg" alt="Item 8">
-                            <h4>Produto 8</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
-                        </div>
-                        <div class="featured-item">
-                            <img src="assets/images/item-06.jpg" alt="Item 9">
-                            <h4>Produto 9</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
-                        </div>
-                    </div>
+    <div class="container  ">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="./assets/images/about2.jpg " class="img-fluid mb-1" alt="">
+            </div>
+            <div class="col-sm-6">
+                <div class="sobre" id="sobre">
+                    <h2>sobre nós </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, labore vitae! Qui accusantium,
+                        excepturi magnam eligendi temporibus, tempora provident dicta necessitatibus quod eos ex ullam
+                        vel sint, optio quos commodi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ut aspernatur rerum
+                        consequatur laudantium velit sit numquam aperiam esse eum, necessitatibus quis, temporibus ipsam
+                        ratione voluptatibus quasi nostrum voluptatem fugit!</p>
+                    <button type="button" class="btn btn-info" style="font-weight: bold;">saiba mais</button>
                 </div>
             </div>
         </div>
@@ -176,6 +213,84 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Contato-->
+
+    <div class="container mt-5 border border-bottom">
+        <div class="row">
+            <div class="col-sm-6 p-5 form-center">
+                <div class="mb-5">
+                    <h2 id="contato">Contato</h2>
+                </div>
+
+                <form action="post">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" name="nome" id="nome" class="form-control rounded-pill border-info"
+                            placeholder="Digite seu nome" aria-describedby="helpNome">
+                        <small id="helpNome" class="text-muted">
+                            Digite um nome válido
+                        </small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="cpf" class="form-label">CPF</label>
+                        <input type="text" name="cpf" id="cpf" class="form-control rounded-pill border-info"
+                            placeholder="Digite o número do seu cpf" aria-describedby="helpCpf">
+                        <small id="helpCpf" class="text-muted">
+                            Digite um número de CPF válido
+                        </small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="text" name="email" id="email" class="form-control rounded-pill border-info"
+                            placeholder="Digite seu email" aria-describedby="helpEmail">
+                        <small id="helpEmail" class="text-muted">
+                            Digite um e-mail válido
+                        </small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="date" class="form-label">data</label>
+                        <input type="text" name="date" id="date" class="form-control rounded-pill border-info"
+                            placeholder="Digite uma data" aria-describedby="helpDate">
+                        <small id="helpDate" class="text-muted">
+                            Digite uma data válida
+                        </small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="time" class="form-label">Tempo</label>
+                        <input type="text" name="time" id="time" class="form-control rounded-pill border-info"
+                            placeholder="Digite um tempo válido" aria-describedby="helpDate">
+                        <small id="helpTempo" class="text-muted">
+                            Digite um tempo válido
+                        </small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="time" class="form-label">CEP</label>
+                        <input type="text" name="cep" id="cep" class="form-control rounded-pill border-info"
+                            placeholder="Digite um CEP válido" aria-describedby="helpCep">
+                        <small id="helpCep" class="text-muted">
+                            Digite um CEP válido
+                        </small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Celular</label>
+                        <input type="text" name="phone" id="phone" class="form-control rounded-pill border-info"
+                            placeholder="Digite um Celular válido" aria-describedby="helpPhone">
+                        <small id="helpPhone" class="text-muted">
+                            Digite um tempo válido
+                        </small>
+                    </div>
+                    <button type="submit" class="btn btn-warning link p-2" style="font-weight: bold;">Enviar</button>
+                </form>
             </div>
         </div>
     </div>
@@ -226,8 +341,8 @@
     </div>
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <!-- Modal
+    <div class="modal fade " id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -240,54 +355,22 @@
             </div>
         </div>
     </div>
+-->
 
-    <div id="contato" class="visually-hidden">
 
-        <form action="post" class="form">
-            <div class="mb-3">
-                <label for="nome" class="form-label">Nome</label>
-                <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome"
-                    aria-describedby="helpNome">
-                <small id="helpNome" class="text-muted">
-                    Digite um nome válido
-                </small>
-            </div>
 
-            <div class="mb-3">
-                <label for="cpf" class="form-label">CPF</label>
-                <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite o número do seu cpf"
-                    aria-describedby="helpCpf">
-                <small id="helpCpf" class="text-muted">
-                    Digite um número de CPF válido
-                </small>
-            </div>
 
-            <div class="mb-3">
-                <label for="email" class="form-label">E-mail</label>
-                <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu email"
-                    aria-describedby="helpDate">
-                <small id="helpDate" class="text-muted">
-                    Digite um e-mail válido
-                </small>
-            </div>
-
-           
-
-          <button type="submit" class="btn btn-primary link">Enviar</button>
-
-    </div>
-
-    </form>
-    </div>
-    <div id="sobre">
+    <!--<div id="sobre" class="visually-hidden">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, delectus nisi! Ullam, incidunt esse,
             architecto provident similique quo error ea modi non tempore velit earum id quos nulla porro aspernatur?</p>
-    </div>
+    </div>-->
 
 
     <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="./vendor/owl/js/owl.js"></script>
+    <script src="./vendor/jquery-mask/jquery.mask.min.js"></script>
+    <script src="./vendor/jquery-ui/jquery-ui.min.js"></script>
     <script src="./js/custom.js"></script>
 
 
